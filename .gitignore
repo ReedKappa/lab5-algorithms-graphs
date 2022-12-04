@@ -367,7 +367,7 @@ ASALocalRun/
 # BeatPulse healthcheck temp database
 healthchecksdb
 
-.idea.lab5-algorithms-graphs
+.idea
 
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
