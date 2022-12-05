@@ -12,6 +12,11 @@ public class Graph
         Vertexes = GetVertexesFromTable(path);
         Edges = GetEdgesFromTable(path);
     }
+    public Graph()
+    {
+        Vertexes = new List<Vertex>();
+        Edges = new List<Edge>();
+    }
 
     public void DepthSearch()
     {
@@ -142,12 +147,12 @@ public class Graph
 
         return v;
     }
-    private void CreateVertex()
+    public void CreateVertex()
     {
         int number = Vertexes.Count + 1;
         Vertexes.Add(new Vertex(number));
     }
-    private void CreateEdge(Vertex v1, Vertex v2)
+    public void CreateEdge(Vertex v1, Vertex v2)
     {
         Edges.Add(new Edge(v1, v2));
     }
